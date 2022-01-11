@@ -1,46 +1,24 @@
-# Synx Challenge
-Welcome to the Synx interview challenge! This repository is designed for candidates to fork and create [pull request](https://help.github.com/articles/about-pull-requests/) with their solutions.
+# Interview Challenge
+En este repositorio se encuentra la solución planteada por `Cristian Zapata` al reto técnico presentado por 
+Synx.ia para la vacante de Científico de Datos de `Kapital Financiera`
 
-### What to expect
-We understand that everyone's time is valuable, all challenges are designed to be short and concise way to explore skills we are interested in, in that way, we also try to offer a complete guide in how to install the needed environments and data (if required) and an extensive guide in how to submit results, so can focus on your soulution.
+### ¿Cómo abrir la solución?
 
-In this challenge, we simplified the tools and processes that we actually use. It's ok not to be familiar with some of them, as the team we would like to be, we are here to help anyway we can, feel free to open an issue if you have any doubts.
+Para abrir el `Jupyter-Notebook` con la solución, puede usar cualquiera de las siguientes opciones:
 
-### What we are looking for?
+- Si tiene **docker** instalado, puede seguir los siguientes pasos:
+  1. En la terminal (`shell`) del sistema operativo en que se encuentre, muevase a la carpeta en donde clonó este repositorio.
+  2. Dentro de la terminal, ejecute el siguiente comando: 
+  `docker build ./ -t interview_cristian` el cuál construirá la respectiva imágen a partirt del `Dockerfile` configurado.
+  3. Una vez termine la construcción de la imagen, ejecute el siguiente comando `docker run -p 8888:8888 interview_cristian` el cuál ejecutará el contenedor con la respectiva imagen anteriormente creada.
+  4. Este último comando deberá inicializar un servidor de Jupyter localmente en el puerto 8888, copie la URL de acceso de la terminal a su navegador de preferencia.
+  5. Una vez abierto Jupyter, navegue a la ruta `notebooks/Solucion Cristian.ipynb` para abrir el respectivo archivo con la solución planteada.
 
-- **Data Science**: To undestand your own though process to solve problems, how do you use, process and present data. 
-
-- **Technical Skills**: To assest your familiarity with tools and processes.
-
-# Challenge Instructions
-
-## Overview
-We're going to leverage typical analysis and development workflows used by our team. In short, you'll:
-
-- Fork this repository and setup a clone on your machine.
-- Run the Jupyter Notebooks by launcher the pre-configured Docker container or using [jupyter.org/try](https://jupyter.org/try)
-- send us completed exam submittal via a [pull request PR](https://help.github.com/articles/about-pull-requests/)
-
-### Fork and Clone the Repo
-
-Fork this repo to your own account using the following button:
-
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/synx-ai/interview-challenge/fork" data-style="mega" aria-label="Fork synx-ai/interview-challenge on GitHub">Fork</a>
-
-Then using your command line shell, fork your repo:
-
-```
-git clone git@github.com:[GH_USERNAME]/interview-challenge.git
-cd interview-challenge
-```
-
-
-### Run Jupyter Locally
-
-If you have **Docker** [installed](https://docs.docker.com/get-docker/), 
-
-```
-docker-compose up
-```
+- De igual manera, puede seguir las siguientes instrucciones:
+  1. Crear un ambiente virtual de manera local, si no sabe cómo, puede seguir las [instrucciones aquí planteada](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/). 
+  2. Una vez creado dicho ambiente virtual, desde la terminal y estando dentro del directorio de este repositorio, ejecute el siguiente comando: `pip install -r requirements.txt`. El cuál instalará las librerías necesarias para la solución planteada.
+  3. Ejecute el comando `jupyter-notebook` en la terminal.
+  4. Este último comando deberá inicializar un servidor de Jupyter localmente en el puerto 8888, copie la URL de acceso de la terminal a su navegador de preferencia.
+  5. Una vez abierto Jupyter, navegue a la ruta `notebooks/Solucion Cristian.ipynb` para abrir el respectivo archivo con la solución planteada.
+  
 
